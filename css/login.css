@@ -17,12 +17,10 @@ body {
     background-color: whitesmoke;
     width: 100%;
     max-width: 500px;
-    height: 500px;
     padding: 40px;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    /* backdrop-filter: blur(10px); */
 }
 
 .logo {
@@ -50,6 +48,7 @@ body {
     border: 1px solid #E5E7EB;
     border-radius: 5px;
     font-size: 14px;
+
 }
 
 .container input[type="email"],
@@ -67,9 +66,48 @@ body {
 .container input[type="button"] {
     color: #F5F5F5;
     background-color: #1F2328;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
 }
 
 .forgot_link {
+    display: block;
     color: #6B7280;
     text-decoration: none;
+    text-align: end;
+    margin-top: 10px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #E5E7EB;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social .social_button {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    margin-top: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.social .social_button img {
+    padding: 5px;
+    width: 35px;
 }
