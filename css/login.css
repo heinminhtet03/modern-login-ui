@@ -67,7 +67,7 @@ body {
     color: #F5F5F5;
     background-color: #1F2328;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
+    transition: 0.2s;
 }
 
 .forgot_link {
@@ -105,9 +105,17 @@ body {
     border-radius: 4px;
     margin-top: 25px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .social .social_button img {
     padding: 5px;
     width: 35px;
+}
+
+/* Adding effects */
+
+.container input[type="button"]:hover {
+    cursor: pointer;
+    transform: scale(1.01);
 }
